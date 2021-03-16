@@ -1,0 +1,53 @@
+WINDOWS 10 install
+	Install Anaconda
+	Start "Anaconda Prompt (Anaconda3)" som Administrator
+		conda create -n fastai python=3.8
+		conda activate fastai
+		conda install -c fastai -c pytorch -c anaconda fastai gh anaconda -c conda-forge
+		conda install -c fastai fastbook
+	[logout and in again]
+	Start "Anaconda Prompt (fastai)" som Administrator
+	navigate til fastbook med "cd" (husk at hente fastbook via git eller direkte fra deres github)
+	jupyter notebook
+		IMPORTANT: Dataloaders need "num_workers=0"
+
+
+
+
+
+
+
+
+
+
+
+
+Install Anaconda
+
+sudo apt-get install python3-pip
+
+
+
+conda create -n fastai python=3.8
+conda activate fastai
+conda install -c fastai -c pytorch -c anaconda fastai gh anaconda -c conda-forge
+conda install -c fastai fastbook
+conda update conda
+[logout and in again]
+jupyter notebook --no-browser
+
+
+
+git clone https://github.com/fastai/fastbook.git
+cd fastbook
+
+
+chmod +x filename.sh
+
+
+
+
+
+
+
+IMPORTANT: Dataloaders need "num_workers=0"
